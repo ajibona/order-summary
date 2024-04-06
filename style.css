@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Color */
+    --cc-Paleblue: hsl(225, 100%, 94%);
+    --cc-Brightblue: hsl(245, 75%, 52%);
+
+    --cc-Verypaleblue: hsl(225, 100%, 98%);
+    --cc-Desaturatedblue: hsl(224, 23%, 55%);
+    --cc-Darkblue: hsl(223, 47%, 23%);
+
+    --ff-light:500;
+    --ff-normal: 700;
+    --ff-bold: 900;
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--cc-Paleblue);
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.card{
+    width: 340px;
+    height: 610px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header{
+    background-image: url("images/illustration-hero.svg");
+    width: 100%;
+    height: 200px;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 40px;
+    background-position: center;
+}
+
+.card-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+
+.cardmarkup{
+    width: 85%;
+    text-align: center;
+}
+
+h1{
+    font-weight: var(--ff-bold);
+    margin-bottom: 17px;
+    font-size: 1.6rem;
+}
+.textbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.musictext{
+    font-size: 1rem;
+    text-align: center;
+    width: 270px;
+    line-height: 1.7;
+    font-weight: var(--ff-light);
+    color: rgb(124, 124, 124);
+}
+
+.annualplan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cc-Verypaleblue);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.annualdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.annualdetails img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+h2{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: var(--ff-bold);
+}
+
+.anualtext p{
+    color: rgb(153, 153, 153);
+    font-size: 0.9rem;
+
+    font-weight: var(--ff-normal);
+}
+
+a{
+    font-size: 0.8rem;
+    font-weight: var(--ff-normal);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+a:hover{
+    color: hsl(245, 76%, 68%);
+
+}
+
+.button-text{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    font-weight: var(--ff-normal);
+    background-color: var(--cc-Brightblue);
+    box-shadow: 1px 20px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 17px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-text:hover{
+    background-color: hsl(245, 76%, 68%);
+}
+
+h3{
+    font-size: 0.9rem;
+    color: rgb(124, 124, 124);
+    font-weight: var(--ff-bold);
+    cursor: pointer;
+}
+
+h3:hover{
+    color: var(--cc-Darkblue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Desktop Design */
+
+@media only screen and (min-width:768px) {
+    
+.card{
+    width: 420px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card-header{
+    background-image: url("images/illustration-hero.svg");
+    width: 100%;
+    height: 215px;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.card-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.cardmarkup{
+    width: 77%;
+    text-align: center;
+}
+
+h1{
+    font-weight: var(--ff-bold);
+    margin-bottom: 17px;
+}
+.textbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.musictext{
+    font-size: 0.9rem;
+    text-align: center;
+    width: 300px;
+    line-height: 1.7;
+    font-weight: var(--ff-light);
+    color: rgb(124, 124, 124);
+}
+
+.annualplan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cc-Verypaleblue);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.annualdetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.annualdetails img{
+    width: 40px;
+    margin-right: 15px;
+}
+
+h2{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: var(--ff-bold);
+}
+
+.anualtext p{
+    color: rgb(153, 153, 153);
+    font-size: 0.9rem;
+
+    font-weight: var(--ff-normal);
+}
+
+a{
+    font-size: 0.8rem;
+    font-weight: var(--ff-normal);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+a:hover{
+    color: hsl(245, 76%, 68%);
+
+}
+
+.button-text{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    font-weight: var(--ff-normal);
+    background-color: var(--cc-Brightblue);
+    box-shadow: 1px 20px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button-text:hover{
+    background-color: hsl(245, 76%, 68%);
+}
+
+h3{
+    font-size: 0.8rem;
+    color: rgb(124, 124, 124);
+    font-weight: var(--ff-bold);
+    cursor: pointer;
+}
+
+h3:hover{
+    color: var(--cc-Darkblue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
